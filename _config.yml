@@ -1,20 +1,24 @@
 # Header
-menu:
-  主页: /
-  所有文章: /archives
+#menu:
+  # 主页: /
+  # 所有文章: /archives
   # 随笔: /tags/随笔
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  facebook: "#"
+  github: "https://github.com/thiagoalvernaz"
+  #weibo: "#"
+  rss: "/atom.xml"
+  facebook: "https://www.facebook.com/thiagoalvernaz"
   # google: "#"
   # twitter: "#"
-  # linkedin: "#"
+  linkedin: "https://br.linkedin.com/in/thiagoalvernaz/"
 
-rss: /atom.xml
+#rss
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
 
 # Content
 excerpt_link: more
@@ -24,30 +28,25 @@ fancybox: true
 google_analytics: ''
 favicon: /favicon.png
 
-#你的头像
-avatar: "https://avatars2.githubusercontent.com/u/2024949?v=2&s=150"
-#是否开启分享
+#avatar
+avatar: "http://thiagoalvernaz.github.io/img/perfil.jpg"
+
+#share
 share: true
-#是否开启多说评论，填写你在多说申请的项目名称
-#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: true
-#是否开启云标签
+
+#basta colocar seu username do disqus, para desativar bastar comentar a linha abaixo
+disqus_shortname: thiagoalvernaz
+
+#tagcloud
 tagcloud: true
 
-#是否开启友情链接
-#不开启——
-#friends: false
-#开启——
+#Links
+#Para desaivar os friends bastar passar false
 friends:
-  奥巴马的博客: http://localhost:4000/
-  卡卡的美丽传说: http://localhost:4000/
-  本泽马的博客: http://localhost:4000/
-  吉格斯的博客: http://localhost:4000/
-  习大大大不同: http://localhost:4000/
-  托蒂的博客: http://localhost:4000/
+  nomadev: http://nomadev.com.br
+  ericdouglas: http://ericdouglas.github.io
+  tableless: http://tableless.com.br
+  MinasDev: http://minasdev.org
 
-#是否开启“关于我”。
-#不开启——
-#aboutme: false
-#开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+#para desativar o aboutme bastar colocar false
+aboutme: Desenvolvedor Front-End a 3 anos, inicializou em 2011 como estagiário na Nave Publicidade onde realizou trabalhos nas áreas de web design e criação de peças publicitárias para a Vivo. Atualmente tem experiência em tecnologias atuais como HTML5, AngularJs, NodeJs, Javascript, CSS3, jQuery, Bootstrap e PHP, já realizou palestras sobre HTML5 e Bootstrap.

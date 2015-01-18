@@ -4,13 +4,21 @@
 	#mobile-nav{
 		display: none;
 		.overlay{
-			height: 110px;
-			position: absolute;
+			height: 175px;
+			position: relative;
 			width: 100%;
 			background: #4d4d4d;
+			.photo{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: url("/img/mean.jpg");
+				background-size: cover;				
+			}
 		}
 		#header{
 			padding: 10px 0 0 0;
+			margin-top: -175px;
 			.profilepic{
 				position: relative;
 			}
@@ -39,8 +47,16 @@
 			width: 100%;
 			height: 180px;
 			background-color: black;
-			position: absolute;
+			position: relative;
 			opacity: 0.7;
+			.photo{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: url("/img/mean.jpg");
+				background-size: cover;				
+			}
+
 		}
 
 		.intrude-less {
@@ -78,16 +94,15 @@
 	.profilepic{
 		text-align: center;
 		img{
-			border-radius:50%;
-			width: 128px;
-			height: 128px;
+			border-radius:3px;
+			width: 130px;
 			border: 2px solid white;
 			background: #88acdb;
 		}
 	}
 	.header-author{
 		text-align: center;
-		margin: 0.67em 0;
+		margin-top: 40px;
 		font-family: Roboto, "Roboto", serif;
 		font-size: 30px;
 	}
@@ -136,7 +151,7 @@
 		transition: transform .3s ease-in;
 		.social {
 			margin-right:15px;
-			margin-top:10px;
+			margin-top:30px;
 			text-align: center;
 			a {
 				border-radius:50%;
@@ -218,7 +233,7 @@
 		    color:#333;   
 		    height:18px;  
 		    line-height:18px;  
-		    padding:0 2px 0 12px;  
+		    padding:0 8px 0 15px;  
 		    position:relative;  
 		    border-radius:0 5px 5px 0; 
 		    margin: 5px 9px 5px 8px;
@@ -293,6 +308,7 @@
 		left: 200%;
 		line-height: 30px;
 		.switch-friends-link{
+			text-decoration: underline;
 			margin-right: 9px;
 			border-radius: 3px;
 			padding: 5px;
@@ -305,7 +321,9 @@
 	.switch-part4{
 		left: 300%;
 		text-align: left;
-		line-height: 30px;
+		text-align: justify;
+		font-size: 13px;
+		line-height: 1.7;
 	}
 }
 
